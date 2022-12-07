@@ -97,7 +97,8 @@
             tablinks[i].className = tablinks[i].className.replace(" active", "");
           }
           document.getElementById(name).style.display = "block";
-          evt.currentTarget.className += " active";
+          if (evt)
+            evt.currentTarget.className += " active";
         }
         openTab(event, 'tab_boogie');
     </script>
