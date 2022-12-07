@@ -2,40 +2,105 @@
 
 <html lang="en">
     <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="css/style.css">
         <title>About Me</title>
     </head>
     <body>
         <header>
+            <div class="skip"><a href="main">Skip to Main Content</a></div>
             <!-- Nav is a sematic tag page that aids accessibility -->
             <nav>
-                <div class="skip"><a href="#main_content">Skip to Main Content</a></div>
-                <ul>
-                    <li><a href = "index.html" >Home</a></li>
-                    <li><a href = "artists.html">My favorite artists</a></li>
-                    <li class="active"><a href = "films.html">My favorite films</a></li>
-                </ul>
+                <div class="topnav">
+                    <a href="index.html">Home</a>
+                    <a class="active" href="films.html">Favorite Films</a>
+                    <a href="artists.html">Favorite Artists</a>
+                  </div>
             </nav>
             <!-- The h1 is a semantic tag that aids accessibility -->
         </header>
         <main>
-            <div id="main_content">
-                <div>
-                    <h1> Movies </h1>
-                    <img src="images/films/catch_me.jpeg"/>
-                    <img src="images/films/harry_potter.jpg"/>
+            <div class="container">
+                <div class="card item zoom shadow-lg">
+                    <div class="card_description">
+                        <a href="https://www.imdb.com/title/tt0264464/"><img src="images/films/catch_me.jpeg" alt="Catch me if you can"/></a>
+                    </div>
+                    <div class="card_name">Catch Me If You Can</div>
                 </div>
-                <div>
-                <h1> Shows </h1>
-                    <img src="images/films/prison_break.jpeg"/>
-                    <img src="images/films/money_heist.png"/>
-                    <img src="images/films/narcos.png"/>
-                    <img src="images/films/breaking_bad.jpg"/>
-                    <img src="images/films/daredevil.jpg"/>
-                    <img src="images/films/haunting_of_hill_house.jpg"/>
-                    <img src="images/films/walking_dead.jpeg"/>
+                <div class="card item zoom shadow-lg">
+                    <div class="card_description">
+                        <a href="https://www.imdb.com/title/tt0119303/"><img src="images/films/home_alone.jpeg" alt="Home Alone 3"/></a>
+                    </div>
+                    <div class="card_name">Home Alone 3</div>
+                </div>
+                <div class="card item zoom shadow-lg">
+                    <div class="card_description">
+                        <a href="https://www.imdb.com/list/ls072049366/"><img src="images/films/harry_potter.jpg" alt="Harry Potter"/></a>
+                    </div>
+                    <div class="card_name">Harry Potter</div>
+                </div>
+                <div class="card item zoom shadow-lg">
+                    <div class="card_description">
+                        <a href="https://www.imdb.com/title/tt2085059/"><img src="images/films/black_mirror.jpeg" alt="Black Mirror"/></a>
+                    </div>
+                    <div class="card_name">Black Mirror</div>
+                </div>
+                <div class="card item zoom shadow-lg">
+                    <div class="card_description">
+                        <a href="https://www.imdb.com/title/tt0455275/"><img src="images/films/prison_break.jpeg" alt="Prison Break"/></a>
+                    </div>
+                    <div class="card_name">Prison Break</div>
+                </div>
+                <div class="card item zoom shadow-lg">
+                    <div class="card_description">
+                        <a href="https://www.imdb.com/title/tt6468322/"><img src="images/films/money_heist.png" alt="Money Heist"/></a>
+                    </div>
+                    <div class="card_name">Money Heist</div>
+                </div>
+                <div class="card item zoom shadow-lg">
+                    <div class="card_description">
+                        <a href="https://www.imdb.com/title/tt2707408/"><img src="images/films/narcos.png" alt="Narcos"/></a>
+                    </div>
+                    <div class="card_name">Narcos</div>
+                </div>
+                <div class="card item zoom shadow-lg">
+                    <div class="card_description">
+                        <a href="https://www.imdb.com/title/tt0903747/"><img src="images/films/breaking_bad.jpg" alt="Breaking Bad"/></a>
+                    </div>
+                    <div class="card_name">Breaking Bad</div>
+                </div>
+                <div class="card item zoom shadow-lg">
+                    <div class="card_description">
+                        <a href="https://www.imdb.com/title/tt3322312/"><img src="images/films/daredevil.jpg" alt="Daredevil"/></a>
+                    </div>
+                    <div class="card_name">Daredevil</div>
+                </div>
+                <div class="card item zoom shadow-lg">
+                    <div class="card_description">
+                        <a href="https://www.imdb.com/title/tt6763664/"><img src="images/films/haunting_of_hill_house.jpg" alt="Haunting of Hill House"/></a>
+                    </div>
+                    <div class="card_name">Haunting of Hill House</div>
+                </div>
+                <div class="card item zoom shadow-lg">
+                    <div class="card_description">
+                        <a href="https://www.imdb.com/title/tt1520211/"><img src="images/films/walking_dead.jpeg" alt="The Walking Dead"/></a>
+                    </div>
+                    <div class="card_name">The Walking Dead</div>
+                </div>
+                <div class="card item zoom shadow-lg">
+                    <div class="card_description">
+                        <a href="https://www.imdb.com/title/tt1190634/"><img src="images/films/the_boys.jpeg" alt="The Boys"/></a>
+                    </div>
+                    <div class="card_name">The Boys</div>
                 </div>
             </div>
         </main>
+        <footer class="container-fluid text-center bg-lightgray">
+            <div>
+                <p>Jonathan Poon
+                <br>
+                <span>SI 339 Final Project</span></p>
+            </div>
+        </footer>
     </body>
 </html>

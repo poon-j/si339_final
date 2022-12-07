@@ -2,34 +2,101 @@
 
 <html lang="en">
     <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="css/style.css">
-        <title>About Me</title>
+        <title>Favorite Artists</title>
     </head>
     <body>
         <header>
+            <div class="skip"><a href="main">Skip to Main Content</a></div>
             <!-- Nav is a sematic tag page that aids accessibility -->
             <nav>
-                <div class="skip"><a href="#main_content">Skip to Main Content</a></div>
-                <ul>
-                    <li><a href = "index.html" >Home</a></li>
-                    <li class="active"><a href = "artists.html">My favorite artists</a></li>
-                    <li><a href = "films.html">My favorite films</a></li>
-                </ul>
+                <div class="topnav">
+                    <a href="index.html">Home</a>
+                    <a href="films.html">Favorite Films</a>
+                    <a class="active" href="artists.html">Favorite Artists</a>
+                  </div>
             </nav>
             <!-- The h1 is a semantic tag that aids accessibility -->
         </header>
         <main>
-            <div id="main_content">
-                <img src="images/artists/1_aboogie.jpg"/>
-                <img src="images/artists/1_hoodieszn.webp"/>
-                <img src="images/artists/1_jungle.jpeg"/>
-                <img src="images/artists/2_gherbo.jpeg"/>
-                <img src="images/artists/2_ballin.png"/>
-                <img src="images/artists/2_strictly4.jpg"/>
-                <img src="images/artists/3_lilbaby.jpeg"/>
-                <img src="images/artists/3_myturn.jpg"/>
-                <img src="images/artists/3_streetgossip.png"/>
+            <div style="text-align: center; margin-top: 20px;" class="alert alert-info" role="alert">
+                Click on a tab to expand
+            </div>
+            <div class="tab">
+                <button class="tablinks" onclick="openTab(event, 'tab_boogie')">A Boogie wit da Hoodie</button>
+                <button class="tablinks" onclick="openTab(event, 'tab_baby')">Lil Baby</button>
+                <button class="tablinks" onclick="openTab(event, 'tab_herbo')">G Herbo</button>
+            </div>
+
+            <div id="tab_boogie" class="tabcontent">
+                <h1>A Boogie wit da Hoodie</h1>
+                <div class="artist_background">
+                    <a href="https://en.wikipedia.org/wiki/A_Boogie_wit_da_Hoodie"><img class="zoom" src="images/artists/1_aboogie.png" alt="A Boogie"/></a>
+                </div>
+
+                <div class="grid shadow-lg">
+                    <a href="https://open.spotify.com/album/3r5hf3Cj3EMh1C2saQ8jyt?autoplay=true"><img class="zoom" src="images/artists/1_hoodieszn.webp" alt="Hoodie SZN"/></a>
+                    <a href="https://open.spotify.com/album/2OQEAqShAl6SodrGhmYZ4Z?autoplay=true"><img class="zoom" src="images/artists/1_jungle.jpeg" alt="Jungle"/></a>
+                    <a href="https://open.spotify.com/album/0cZAE6guibfcYmTZD7hiae"><img class="zoom" src="images/artists/1_artist2.png" alt="Artist 2.0"/></a>
+                    <a href="https://open.spotify.com/album/3HHp5I6Q6SEyU5bkvoCtnV"><img class="zoom" src="images/artists/1_thebiggerartist.jpeg" alt="The Bigger Artist"/></a>
+                    <a href="https://open.spotify.com/album/3r5hf3Cj3EMh1C2saQ8jyt?autoplay=true"><img class="zoom" src="images/artists/1_mevsmyself.jpg" alt="Me Vs Myself"/></a>
+
+                </div>
+            </div>
+            
+            <div id="tab_baby" class="tabcontent">
+                <h1>Lil Baby</h1>
+                <div class="artist_background">
+                    <a href="https://en.wikipedia.org/wiki/Lil_Baby"><img class="zoom" src="images/artists/3_lilbaby.png" alt="Lil Baby"/></a>
+                </div>
+                <div class="grid shadow-lg">
+                    <a href="https://open.spotify.com/album/4iF44RCCybJtkBkMoqrLW2?autoplay=true"><img class="zoom" src="images/artists/3_streetgossip.png" alt="Street Gossip"/></a>
+                    <a href="https://open.spotify.com/album/6uhEg4ASZYLIilZFCBFy1r?autoplay=true"><img class="zoom" src="images/artists/3_myturn.jpg" alt="My Turn"/></a>
+                    <a href="https://open.spotify.com/album/2yXnY2NiaZk9QiJJittS81?autoplay=true"><img class="zoom" src="images/artists/3_dripharder.jpeg" alt="Drip Harder"/></a>
+                    <a href="https://open.spotify.com/album/0FYvMdfTfYJxnJnKs1wDb0?autoplay=true"><img class="zoom" src="images/artists/3_onlyme.webp" alt="Only Me"/></a>
+                    <a href="https://open.spotify.com/album/7yf9ZJyHRbp8sHtpDKfPpt?autoplay=true"><img class="zoom" src="images/artists/3_harderthanever.jpeg" alt="Harder Than Ever"/></a>
+                </div>
+            </div>
+            
+            <div id="tab_herbo" class="tabcontent">
+                <h1>G Herbo</h1>
+                <div class="artist_background">
+                    <a href="https://en.wikipedia.org/wiki/G_Herbo"><img class="zoom" src="images/artists/2_gherbo.jpeg" alt="G Herbo"/></a>
+                </div>
+
+                <div class="grid shadow-lg">
+                    <a href="https://open.spotify.com/album/2wxt4rzn2ws7OEUV3UiPYJ?autoplay=true"><img class="zoom" src="images/artists/2_ballin.png" alt="Ballin Like Im Kobe"/></a>
+                    <a href="https://open.spotify.com/album/5XLw4dnwqajOACwT2MN2d0?autoplay=true"><img class="zoom" src="images/artists/2_strictly4.jpg" alt="Strictly 4 My Fanz"/></a>
+                    <a href="https://open.spotify.com/album/5T1xg0VySf2wbzswK84Lbl?autoplay=true"><img class="zoom" src="images/artists/2_fazo.jpeg" alt="Welcome to Fazoland"/></a>
+                    <a href="https://open.spotify.com/album/19trhRvgk1m0PnD3kmMKLY?autoplay=true"><img class="zoom" src="images/artists/2_ptsd.png" alt="PTSD"/></a>
+                    <a href="https://open.spotify.com/album/46Shwm91xl9opm3MadNEGn?autoplay=true"><img class="zoom" src="images/artists/2_humblebeast.png" alt="Humble Beast"/></a>
+                </div>
             </div>
         </main>
+        <footer class="container-fluid text-center bg-lightgray">
+            <div>
+                <p>Jonathan Poon
+                <br>
+                <span>SI 339 Final Project</span></p>
+            </div>
+        </footer>
     </body>
+
+    <script>
+        function openTab(evt, name) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(name).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+        openTab(event, 'tab_boogie');
+    </script>
 </html>

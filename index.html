@@ -2,25 +2,45 @@
 
 <html lang="en">
     <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="css/style.css">
-        <title>About Me</title>
+        <title>Home</title>
     </head>
     <body>
         <header>
+            <div class="skip"><a href="main">Skip to Main Content</a></div>
             <!-- Nav is a sematic tag page that aids accessibility -->
             <nav>
-                <div class="skip"><a href="#main_content">Skip to Main Content</a></div>
-                <ul>
-                    <li class="active"><a href = "index.html" >Home</a></li>
-                    <li><a href = "artists.html">My favorite artists</a></li>
-                    <li><a href = "films.html">My favorite films</a></li>
-                </ul>
+                <div class="topnav">
+                    <a class="active" href="index.html">Home</a>
+                    <a href="films.html">Favorite Films</a>
+                    <a href="artists.html">Favorite Artists</a>
+                  </div>
             </nav>
             <!-- The h1 is a semantic tag that aids accessibility -->
         </header>
         <main>
-            <div id="main_content">
+            <div class="split left">
+                <div class="centered">
+                    <a href="films.html"><img class="zoom" src="images/home/film_avatar.jpeg" alt="Film avatar"></a>
+                    <a style="text-decoration: none; color: white;" href="films.html"><h2>Favorite Films</h2></a>
+                </div>
             </div>
+                
+            <div class="split right">
+                <div class="centered">
+                    <a href="artists.html"><img class="zoom" src="images/home/music_avatar.png" alt="Avatar man"></a>
+                    <a style="text-decoration: none; color: white;" href="artists.html"><h2>Favorite Artists</h2></a>
+                </div>
+            </div>
+            <div class="footer_padding"></div>
         </main>
+        <footer class="container-fluid text-center bg-lightgray">
+            <div>
+                <p>Jonathan Poon
+                <br>
+                <span>SI 339 Final Project</span></p>
+            </div>
+        </footer>
     </body>
 </html>
