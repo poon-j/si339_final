@@ -9,10 +9,6 @@ body {
 	background: #F9F6EE;
 }
 
-.footer_padding {
-	padding-bottom: 700px;
-}
-
 .active{
 	background: white;
     text-transform: uppercase;
@@ -49,19 +45,6 @@ footer{
 	margin: 20px 0;
 }
 
-
-
-/*Change the styling for all of the list 
-items in the nav section*/
-nav li{
-	background-color: #ECFF4D;
-	padding:10px;
-	width:25%;
-	border:1px solid black;
-	display: inline-block;
-	width: 20%;
-}
-
 /*Added this so the links stay the same color*/
 a:visited{color:#0000FF}
 
@@ -83,6 +66,7 @@ a:visited{color:#0000FF}
 .right {
 	bottom: 0;
 	background-color: #606060;
+	padding-bottom: 500px;
 }
   
 .centered {
@@ -279,7 +263,7 @@ a:visited{color:#0000FF}
 
  @media screen and (min-width: 776px){
 	.footer_padding {
-		padding-bottom: 700px	;
+		margin-bottom: 700px;
 	}
 	.grid{
 		justify-content: center;
